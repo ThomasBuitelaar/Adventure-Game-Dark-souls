@@ -6,6 +6,10 @@ var HasKey = false;
 var Souls = 900;
 var SL = 1;
 
+var opt1 = document.getElementById('Opt1');
+var opt2 = document.getElementById('Opt3');
+var opt3 = document.getElementById('Opt3');
+
 
 function firelink(){
 	console.log("firelink()");
@@ -17,16 +21,27 @@ function firelink(){
 	var txt1 = document.getElementById('text1');
 	txt1.innerHTML = '';
 
+
 	var opt2 = document.getElementById('Opt2');
-	opt2.innerHTML= '';
+	opt2.innerHTML= 'Go to The High Wall of Lothric';
+	opt2.onclick = function(){
+		if(BonfireLit){
+			highwall();
+		} else {
+			alert('You need to ignite the bonfire first.');
+		}
+	}
 
 	var opt3 = document.getElementById('Opt3');
-	opt3.innerHTML= '';
+	opt3.innerHTML = 'Light the Bonfire';
+	opt3.onclick = function(){
+		BonfireLit = true;
+	}
 
 }
 
 function firekeeper(){
-	console.log("firekeeper()")
+	console.log("firekeeper()");
 	var opt1 = document.getElementById('Opt1');
 	opt1.innerHTML = 'Talk';
 	opt1.onclick = function(){
@@ -48,5 +63,12 @@ function firekeeper(){
 }
 
 
-
+function highwall(){
+	console.log("highwall()");
+	opt1.innerHTML = 'Left';
+	opt2.innerHTML = 'Back';
+	opt3.innerHTML = 'Right';
+	
+	
+}
 

@@ -8,28 +8,24 @@ body {
 	
 }
 
+.butn{
+	position: absolute;
+}
+
 #Opt1{
 	margin-left: 0px;
+
 }
 
 #Opt2{
 	margin-right: 0px;
+	visibility:
 }
+
 
 #Opt3{
 	margin-top: 0px;
 }
-/*
-@font-face{
-	font-family: optimusPrinceps;
-	src:	url('font/optimusprinceps.ttf');
-			
-}
-
-.DSFont{
-	font-family: optimusPrinceps;
-}
-*/
 
 header{
 	font-size: 200%;
@@ -58,8 +54,9 @@ button{
 }
 
 p{
+	font-size: 130%;
 	margin: auto 0;
 	margin-top: 50px;
-	margin-right: 200px;
-	margin-left: 200px;
+	margin-right: 250px;
+	margin-left: 250px;
 }

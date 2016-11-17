@@ -2,6 +2,7 @@ var opt1 = document.getElementById('Opt1');
 var opt2 = document.getElementById('Opt2');
 var opt3 = document.getElementById('Opt3');
 var txt1 = document.getElementById('text1');
+var lvl = document.getElementById('level_title');
 
 var BonfireLit = false
 var HasKey = false;
@@ -103,14 +104,16 @@ function highwall(){
 		ladder();
 	}
 	
+	txt1.innerHTML = 'You arrive at The High Wall of Lothric. You gaze around, taking in the overwelming sight of giant castle looming in the distance';
 	
 }
 
 
 function dragon(){
+	console.log("dragon()");
 	opt1.innerHTML = 'Charge in';
 	opt1.onclick = function(){
-
+		charge();
 	}
 
 	opt2.innerHTML = 'Back to The High Wall of Lothric';
@@ -120,9 +123,20 @@ function dragon(){
 
 	opt3.innerHTML = 'Try to sneak up to them';
 	opt3.onclick = function(){
-
+		sneak();
 	}
 txt1.innerHTML = 'You walk up some stairs. To your right is the backside of a giant petrified dragon. Gathering around him are three hollow soldiers. Will you attack these cursed undead and take their souls or will you leave them be? ';
+
+
+function charge(){
+
+}
+
+
+function sneak(){
+
+}
+
 
 }
 

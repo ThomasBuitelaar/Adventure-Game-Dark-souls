@@ -89,6 +89,7 @@ function firekeeper(){
 
 function highwall(){
 	console.log("highwall()");
+	lvl
 	opt1.innerHTML = 'Left';
 	opt1.onclick = function(){
 		dragon();
@@ -129,11 +130,13 @@ txt1.innerHTML = 'You walk up some stairs. To your right is the backside of a gi
 
 
 function charge(){
+	console.log("charge()");
 
 }
 
 
 function sneak(){
+	console.log("sneak()");
 
 }
 
@@ -141,5 +144,6 @@ function sneak(){
 }
 
 function ladder(){
+	console.log("ladder");
 
 }

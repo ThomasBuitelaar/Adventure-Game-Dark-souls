@@ -1,14 +1,23 @@
-document.getElementById('Opt1').innerHTML = 'Start';
-document.getElementById('level_title').innerHTML = 'Intro';
+var opt1 = document.getElementById('Opt1');
+var opt2 = document.getElementById('Opt2');
+var opt3 = document.getElementById('Opt3');
 
 var BonfireLit = false
 var HasKey = false;
-var Souls = 900;
+var Souls = 0;
 var SL = 1;
 
-var opt1 = document.getElementById('Opt1');
-var opt2 = document.getElementById('Opt3');
-var opt3 = document.getElementById('Opt3');
+
+opt1.innerHTML = 'Start';
+document.getElementById('level_title').innerHTML = 'Intro';
+opt2.style.visibility = "hidden";
+opt3.style.visibility = "hidden";
+
+opt1.onclick = function(){
+	opt2.style.visibility = "visible";
+	opt3.style.visibility = "visible";
+	firelink();
+}
 
 
 function firelink(){
@@ -51,9 +60,22 @@ function firekeeper(){
 	}
 	
 
+
 	var opt2 = document.getElementById('Opt2');
 	opt2.innerHTML = 'Level up';
+
+
+	opt2.onclick = function(){
+		if(Souls >= 500){
+			SL = SL + 1;
+			console.log(SL);
+		} else{
+			alert('You need more souls.');
+	}
 	
+}
+
+
 	var opt3 = document.getElementById('Opt3');
 	opt3.innerHTML = 'Back';
 	opt3.onclick = function(){
@@ -66,9 +88,29 @@ function firekeeper(){
 function highwall(){
 	console.log("highwall()");
 	opt1.innerHTML = 'Left';
-	opt2.innerHTML = 'Back';
+	opt1.onclick = function(){
+
+	}
+
+	opt2.innerHTML = 'Back to Firelink Shrine';
+	opt2.onclick = function(){
+		firelink();
+	}
+
 	opt3.innerHTML = 'Right';
+	opt3.onclick = function(){
+
+	}
 	
 	
 }
 
+
+function dragon(){
+	opt1.innerHTML = 'Charge in';
+	opt1.onclick = function(){
+
+	}
+
+	opt2.innerHTML = 'Back to The High Wall of Lothric';
+}

@@ -89,7 +89,7 @@ function highwall(){
 	console.log("highwall()");
 	opt1.innerHTML = 'Left';
 	opt1.onclick = function(){
-
+		dragon();
 	}
 
 	opt2.innerHTML = 'Back to Firelink Shrine';
@@ -99,7 +99,7 @@ function highwall(){
 
 	opt3.innerHTML = 'Right';
 	opt3.onclick = function(){
-
+		ladder();
 	}
 	
 	
@@ -113,4 +113,12 @@ function dragon(){
 	}
 
 	opt2.innerHTML = 'Back to The High Wall of Lothric';
+	opt2.onclick = function(){
+
+	}
+
+	opt3.innerHTML = '';
+	opt3.onclick = function(){
+
+	}
 }

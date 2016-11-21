@@ -4,19 +4,19 @@ var opt3 = document.getElementById('Opt3');
 var txt1 = document.getElementById('text1');
 var lvl = document.getElementById('level_title');
 
-var BonfireLit = false
+var BonfireLit = false;
 var HasKey = false;
 var Souls = 0;
 var SL = 1;
 
 
-opt1.innerHTML = 'Start';
+opt2.innerHTML = 'Start';
 document.getElementById('level_title').innerHTML = 'Intro';
-opt2.style.visibility = "hidden";
+opt1.style.visibility = "hidden";
 opt3.style.visibility = "hidden";
 
-opt1.onclick = function(){
-	opt2.style.visibility = "visible";
+opt2.onclick = function(){
+	opt1.style.visibility = "visible";
 	opt3.style.visibility = "visible";
 	firelink();
 }
@@ -117,20 +117,33 @@ function dragon(){
 		charge();
 	}
 
-	opt2.innerHTML = 'Back to The High Wall of Lothric';
+
+	opt2.innerHTML = 'Try to sneak up to them';
 	opt2.onclick = function(){
+		sneak();
+	}
+
+
+	opt3.innerHTML = 'Back to The High Wall of Lothric';
+	opt3.onclick = function(){
 		highwall();
 	}
 
-	opt3.innerHTML = 'Try to sneak up to them';
-	opt3.onclick = function(){
-		sneak();
-	}
+
 txt1.innerHTML = 'You walk up some stairs. To your right is the backside of a giant petrified dragon. Gathering around him are three hollow soldiers. Will you attack these cursed undead and take their souls or will you leave them be? ';
 
 
 function charge(){
 	console.log("charge()");
+	txt1.innerHTML = 'You draw your sword and start running towards the closest enemy. This alerts the other two soldiers who jump up. you try to block their strikes with your shield, but your shield gives out at a simultaneous hit form the first and second soldier. The third soldier inserted his blade into your chest. YOU DIED.';
+	opt1.style.visibility = "hidden";
+	opt3.style.visibility = "hidden";
+
+	opt2.innerHTML = 'Retry';
+
+	opt2.onclick = function(){
+		location.reload();
+	}
 
 }
 
@@ -147,3 +160,5 @@ function ladder(){
 	console.log("ladder");
 
 }
+
+

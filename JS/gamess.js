@@ -73,6 +73,8 @@ function firekeeper(){
 	opt2.onclick = function(){
 		if(Souls >= 500){
 			SL = SL + 1;
+			Souls = Souls - 500;
+			document.getElementById('ammsoul').innerHTML = "Souls: " + Souls;
 			console.log(SL);
 		} else{
 			alert('You need more souls.');

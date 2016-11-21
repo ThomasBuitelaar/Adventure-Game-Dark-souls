@@ -187,5 +187,3 @@ function ladder(){
 	console.log("ladder");
 
 }
-
-

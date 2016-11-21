@@ -14,10 +14,12 @@ opt2.innerHTML = 'Start';
 document.getElementById('level_title').innerHTML = 'Intro';
 opt1.style.visibility = "hidden";
 opt3.style.visibility = "hidden";
-
+document.getElementById('ammsoul').style.visibility ="hidden";
 opt2.onclick = function(){
 	opt1.style.visibility = "visible";
 	opt3.style.visibility = "visible";
+	document.getElementById('ammsoul').style.visibility = "visible";
+	document.getElementById('ammsoul').innerHTML = "Souls: 0"
 	firelink();
 }
 
@@ -145,7 +147,7 @@ function dragon(){
 	opt2.onclick = function(){
 		sneak();
 		Souls = Souls + 600;
-		document.getElementById('ammsoul').innerHTML = "Souls:"  + Souls;
+		document.getElementById('ammsoul').innerHTML = "Souls: " + Souls;
 
 	}
 

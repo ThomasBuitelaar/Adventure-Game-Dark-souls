@@ -8,7 +8,6 @@ var BonfireLit = false;
 var HasKey = false;
 var Souls = 0;
 var SL = 1;
-var ammsoul = 0;
 
 
 opt2.innerHTML = 'Start';
@@ -143,6 +142,7 @@ function dragon(){
 
 	opt2.innerHTML = 'Try to sneak up to them';
 	opt2.onclick = function(){
+		Souls = Souls+600;
 		sneak();
 	}
 
@@ -172,7 +172,8 @@ function charge(){
 
 function sneak(){
 	console.log("sneak()");
-	txt1.innerHTML = '';
+	txt1.innerHTML = 'You stick to the walls, trying to make no sound. The standing soldier turns his back towards you.You impale the undead fiend from behind, trying not to make too much noise and wake up the sleeping soldiers.Walking up to the other undead who are still sound asleep. With a swing with your sword, you decapitate them and claim all their souls.you gaind 600 souls.';
+
 
 }
 

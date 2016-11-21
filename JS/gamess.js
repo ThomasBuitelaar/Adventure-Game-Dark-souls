@@ -58,7 +58,7 @@ function firekeeper(){
 	opt1.onclick = function(){
 		var txt1 = document.getElementById('text1');
 
-		txt1.innerHTML = 'Welcome to the bonfire, Unkindled One. I am a Fire Keeper. I tend to the flame, and tend to thee. The Lords have left their thrones, and must be deliverd to them. To this end, I am at thy side.';
+		txt1.innerHTML = 'Welcome to the bonfire, Unkindled One. I am a Fire Keeper. I tend to the flame, and tend to thee. The Lords have left their thrones, and must be deliver&#39;d to them. To this end, I am at thy side.';
 	}
 	
 
@@ -112,6 +112,8 @@ function highwall(){
 
 function dragon(){
 	console.log("dragon()");
+	txt1.innerHTML = 'You walk up some stairs. To your right is the backside of a giant petrified dragon. Gathering around him are three hollow soldiers. Two of them are asleep. Will you attack these cursed undead and take their souls or will you leave them be? ';
+
 	opt1.innerHTML = 'Charge in';
 	opt1.onclick = function(){
 		charge();
@@ -128,9 +130,8 @@ function dragon(){
 	opt3.onclick = function(){
 		highwall();
 	}
+}
 
-
-txt1.innerHTML = 'You walk up some stairs. To your right is the backside of a giant petrified dragon. Gathering around him are three hollow soldiers. Two of them are asleep. Will you attack these cursed undead and take their souls or will you leave them be? ';
 
 
 function charge(){

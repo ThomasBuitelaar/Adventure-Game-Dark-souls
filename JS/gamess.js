@@ -8,6 +8,7 @@ var BonfireLit = false;
 var HasKey = false;
 var Souls = 0;
 var SL = 1;
+var ammsoul = 0;
 
 
 opt2.innerHTML = 'Start';
@@ -86,6 +87,26 @@ function firekeeper(){
 
 }
 
+function highwall2(){
+	console.log("highwall2()");
+	lvl
+	opt1.innerHTML = 'Left';
+	opt1.onclick = function(){
+		dragon();
+	}
+
+	opt2.innerHTML = 'Back to Firelink Shrine';
+	opt2.onclick = function(){
+		firelink();
+	}
+
+	opt3.innerHTML = 'Right';
+	opt3.onclick = function(){
+		ladder();
+	}
+	txt1.innerHTML="";
+}
+
 
 function highwall(){
 	console.log("highwall()");
@@ -128,9 +149,9 @@ function dragon(){
 
 	opt3.innerHTML = 'Back to The High Wall of Lothric';
 	opt3.onclick = function(){
-		highwall();
+		highwall2();
 	}
-}
+
 
 
 

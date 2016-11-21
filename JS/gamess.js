@@ -130,7 +130,7 @@ function dragon(){
 	}
 
 
-txt1.innerHTML = 'You walk up some stairs. To your right is the backside of a giant petrified dragon. Gathering around him are three hollow soldiers. Will you attack these cursed undead and take their souls or will you leave them be? ';
+txt1.innerHTML = 'You walk up some stairs. To your right is the backside of a giant petrified dragon. Gathering around him are three hollow soldiers. Two of them are asleep. Will you attack these cursed undead and take their souls or will you leave them be? ';
 
 
 function charge(){
@@ -150,6 +150,7 @@ function charge(){
 
 function sneak(){
 	console.log("sneak()");
+	txt1.innerHTML = '';
 
 }
 

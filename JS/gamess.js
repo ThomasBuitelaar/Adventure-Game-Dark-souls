@@ -114,7 +114,6 @@ function highwall2(){
 
 function highwall(){
 	console.log("highwall()");
-	lvl
 	opt1.innerHTML = 'Left';
 	opt1.onclick = function(){
 		dragon();
@@ -187,5 +186,7 @@ function sneak(){
 
 function ladder(){
 	console.log("ladder");
+	txt1.innerHTML = "You approach a seemingly empty room. A faint light shimmers near the wall to the left.  There are some barrels and boxes littered throughout the room. You hear a slight snoring from the back of the room. Will you go out and explore or go down a ladder that is in the middle of the room?";
+	
 
 }

@@ -196,14 +196,14 @@ function ladder(){
 	opt2.onclick = function(){
 
 	}
-	opt3.innerHTML = "Walk towards the boxes";
+	opt3.innerHTML = "Search the boxes for items";
 	opt3.onclick = function(){
-		walkBoxes()
+		searchBoxes()
 	}
 
 }
 
-function walkBoxes(){
+function searchBoxes(){
 	txt1.innerHTML = "";
 
 	opt1.style.visibility = "hidden";

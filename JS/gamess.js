@@ -209,10 +209,19 @@ function walkBoxes(){
 	opt1.style.visibility = "hidden";
 	opt3.style.visibility = "hidden";
 
+
 	opt2.innerHTML = "Retry"
+	opt2.onclick = function(){
+		location.reload();
+	}
 }
 
 function walkLight(){
+txt1.innerHTML = "";
+
+	opt2.style.visibility = "hidden";
+
+
 
 }
 

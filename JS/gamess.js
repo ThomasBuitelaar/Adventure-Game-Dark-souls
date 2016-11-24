@@ -231,5 +231,14 @@ txt1.innerHTML = "";
 }
 
 function downLadder(){
+	txt1.innerHTML = "";
+	op1.innerHTML = "Go up the stairs";
+	opt1.onclick = function(){
 
+	}
+
+	opt3.innerHTML = "Go down the ally"
+	opt3.onclick = function(){
+		
+	}
 }

@@ -221,6 +221,11 @@ txt1.innerHTML = "";
 
 	opt2.style.visibility = "hidden";
 
+	opt3.innerHTML = "Back to The High Wall of Lothric";
+	opt3.onclick = function(){
+		highwall2();
+	}
+
 
 
 }

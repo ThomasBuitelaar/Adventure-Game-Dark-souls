@@ -194,11 +194,11 @@ function ladder(){
 	}
 	opt2.innerHTML = "Descent down the ladder";
 	opt2.onclick = function(){
-
+		downLadder();
 	}
 	opt3.innerHTML = "Search the boxes for items";
 	opt3.onclick = function(){
-		searchBoxes()
+		searchBoxes();
 	}
 
 }
@@ -238,15 +238,15 @@ txt1.innerHTML = "";
 
 function downLadder(){
 	console.log("downLadder()");
-	txt1.innerHTML = "";
-	op1.innerHTML = "Go up the stairs";
+	txt1.innerHTML = "You climb down the ladder. To your left are stairs and to the right is a small allyway with a few archers.";
+	opt1.innerHTML = "Go up the stairs";
 	opt1.onclick = function(){
-
+		firetower();
 	}
 
 
 
-	opt3.innerHTML = "Go down the ally"
+	opt3.innerHTML = "Go down the ally";
 	opt3.onclick = function(){
 		
 	}
@@ -262,7 +262,30 @@ function firetower(){
 	console.log("firetower()");
 	txt1.innerHTML = "";
 	opt2.style.visibility = "hidden";
-	opt1.innerHTML = "";
-	opt3.innerHTML = "";
+	opt1.innerHTML = "Run towards the gate";
+	opt1.onclick = function(){
+		fireRun();
+	}
+	opt3.innerHTML = "Try to hide behind a wall";
+	opt3.onclick = function(){
+		fireHide();
+	}
+
+
+	function fireRun(){
+
+	}
+
+	function fireHide(){
+		txt1.innerHTML = "";
+
+		opt2.style.visibility = "hidden";
+		opt3.style.visibility = " hidden";
+		opt1.innerHTML = "Retry";
+		opt1.onclick =  function(){
+			location.reload();
+		}
+
+	}
 
 }

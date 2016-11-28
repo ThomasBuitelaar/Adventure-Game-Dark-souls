@@ -249,6 +249,10 @@ function downLadder(){
 	}
 }
 
+function archers(){
+	txt1.innerHTML = "";
+}
+
 
 function firetower(){
 	txt1.innerHTML = "";

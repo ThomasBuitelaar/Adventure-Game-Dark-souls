@@ -185,7 +185,7 @@ function sneak(){
 
 
 function ladder(){
-	console.log("ladder");
+	console.log("ladder()");
 	txt1.innerHTML = "You approach a seemingly empty room. A faint light shimmers near the wall to the left.  There are some barrels and boxes littered throughout the room. You hear a slight snoring from the back of the room. Will you go out and explore or go down a ladder that is in the middle of the room?";
 
 	opt1.innerHTML = "Walk towards the light";
@@ -204,6 +204,7 @@ function ladder(){
 }
 
 function searchBoxes(){
+	console.log("searchBoxes()");
 	txt1.innerHTML = "";
 
 	opt1.style.visibility = "hidden";
@@ -221,6 +222,7 @@ function searchBoxes(){
 }
 
 function walkLight(){
+	console.log("walkLight()")
 txt1.innerHTML = "";
 
 	opt2.style.visibility = "hidden";
@@ -235,6 +237,7 @@ txt1.innerHTML = "";
 }
 
 function downLadder(){
+	console.log("downLadder()");
 	txt1.innerHTML = "";
 	op1.innerHTML = "Go up the stairs";
 	opt1.onclick = function(){
@@ -250,10 +253,16 @@ function downLadder(){
 }
 
 function archers(){
+	console.log("archers()");
 	txt1.innerHTML = "";
 }
 
 
 function firetower(){
+	console.log("firetower()");
 	txt1.innerHTML = "";
+	opt2.style.visibility = "hidden";
+	opt1.innerHTML = "";
+	opt3.innerHTML = "";
+
 }

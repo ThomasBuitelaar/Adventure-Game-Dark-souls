@@ -208,6 +208,10 @@ function searchBoxes(){
 
 	opt1.style.visibility = "hidden";
 	opt3.style.visibility = "hidden";
+	opt2.innerHTML = "Retry";
+	opt1.onclick = function(){
+		location.reload();
+	}
 
 
 	opt2.innerHTML = "Retry"
@@ -237,8 +241,15 @@ function downLadder(){
 
 	}
 
+
+
 	opt3.innerHTML = "Go down the ally"
 	opt3.onclick = function(){
 		
 	}
+}
+
+
+function firetower(){
+	txt1.innerHTML = "";
 }

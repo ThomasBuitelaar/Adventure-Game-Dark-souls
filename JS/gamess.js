@@ -273,6 +273,11 @@ function firetower(){
 
 
 	function fireRun(){
+		txt1.innerHTML = "";
+
+		opt1.innerHTML = "";
+		opt2.innerHTML = "";
+		opt3.innerHTML = "";
 
 	}
 
